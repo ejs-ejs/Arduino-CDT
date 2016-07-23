@@ -4,7 +4,20 @@
 
 //unsigned int cTimings[] PROGMEM;
 
- 
+// notes in the melody:
+int end_melody[] = {
+  NOTE_C5, NOTE_G4, NOTE_G4, NOTE_A4, NOTE_G4, 0, NOTE_B4, NOTE_C5
+};
+
+
+// note durations: 4 = quarter note, 8 = eighth note, etc.:
+int end_noteDurations[] = {
+  4, 8, 8, 4, 4, 4, 4, 4
+};
+
+
+
+#define MAX_TIMER_VALUES 42
 #define LATCH  12  //pin 12 connect to RCK
 #define CLOCK  11  //pin 11 connect to SCK
 #define DATA   10  //pin 10 connect to DIO
