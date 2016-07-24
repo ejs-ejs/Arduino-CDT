@@ -1,0 +1,4 @@
+Info:Grandinės nuskaitomos iš failo "C:\Users\ejs\Documents\KiCAD\Arduino 7segment timer\Arduino 7segment timer.net".
+
+Info:Using references to match components and footprints.
+

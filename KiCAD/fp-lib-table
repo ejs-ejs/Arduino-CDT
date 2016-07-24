@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name "display 7seg")(type KiCad)(uri "C:\\Users\\ejs\\Documents\\KiCAD\\libs\\display 7seg.pretty")(options "")(descr ""))
+  (lib (name arduino)(type Legacy)(uri C:\Users\ejs\Documents\KiCAD\libs\arduino.mod)(options "")(descr ""))
+  (lib (name "Arduino Nano")(type KiCad)(uri "C:\\Users\\ejs\\Documents\\KiCAD\\libs\\Arduino shields\\Arduino_Nano\\Socket_Arduino_Nano.pretty")(options "")(descr ""))
+  (lib (name "switches - encoders")(type Legacy)(uri C:\Users\ejs\Documents\KiCAD\libs\switch-rot.mod)(options "")(descr ""))
+  (lib (name w_devices)(type Legacy)(uri C:\Users\ejs\Documents\KiCAD\libs\w_device.dcm)(options "")(descr ""))
+)

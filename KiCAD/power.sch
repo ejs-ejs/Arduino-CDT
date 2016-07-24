@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_connectors
+LIBS:arduino
+LIBS:displays-7seg
+LIBS:switch-enc
+LIBS:w_device
+LIBS:sx02s02
+LIBS:Arduino 7segment timer-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Count down timer with 4x7 scrapped LED display (common cathode) "
+Date "2016-07-24"
+Rev "0.1b"
+Comp "TxTn"
+Comment1 "ejs, 2016"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R101
+U 1 1 578DD6EC
+P 4500 5200
+F 0 "R101" V 4580 5200 50  0000 C CNN
+F 1 "150" V 4500 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4430 5200 50  0000 C CNN
+F 3 "" H 4500 5200 50  0000 C CNN
+	1    4500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4800 4500 5050
+Wire Wire Line
+	5050 4200 5050 3600
+Wire Wire Line
+	4700 4200 5050 4200
+$Comp
+L HEADER_2 J2
+U 1 1 578DD6F2
+P 3200 1100
+F 0 "J2" H 3200 1250 60  0000 C CNN
+F 1 "DC 12V" H 3200 950 60  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 3200 1100 60  0000 C CNN
+F 3 "" H 3200 1100 60  0000 C CNN
+	1    3200 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1050 3950 1050
+Wire Wire Line
+	4750 1050 5650 1050
+$Comp
+L +12V #PWR015
+U 1 1 578DD6F3
+P 3650 900
+F 0 "#PWR015" H 3650 750 50  0001 C CNN
+F 1 "+12V" H 3650 1040 50  0000 C CNN
+F 2 "" H 3650 900 50  0000 C CNN
+F 3 "" H 3650 900 50  0000 C CNN
+	1    3650 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5350 4500 5700
+$Comp
+L GND #PWR016
+U 1 1 578DD6FC
+P 4700 4800
+F 0 "#PWR016" H 4700 4550 50  0001 C CNN
+F 1 "GND" H 4700 4650 50  0000 C CNN
+F 2 "" H 4700 4800 50  0000 C CNN
+F 3 "" H 4700 4800 50  0000 C CNN
+	1    4700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 900  3650 1200
+Connection ~ 3650 1050
+$Comp
+L GND #PWR017
+U 1 1 578DD6FD
+P 3300 1150
+F 0 "#PWR017" H 3300 900 50  0001 C CNN
+F 1 "GND" H 3300 1000 50  0000 C CNN
+F 2 "" H 3300 1150 50  0000 C CNN
+F 3 "" H 3300 1150 50  0000 C CNN
+	1    3300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 578DD6FE
+P 4350 1350
+F 0 "#PWR018" H 4350 1100 50  0001 C CNN
+F 1 "GND" H 4350 1200 50  0000 C CNN
+F 2 "" H 4350 1350 50  0000 C CNN
+F 3 "" H 4350 1350 50  0000 C CNN
+	1    4350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR019
+U 1 1 578DD70F
+P 3650 900
+F 0 "#PWR019" H 3650 750 50  0001 C CNN
+F 1 "+12V" H 3650 1040 50  0000 C CNN
+F 2 "" H 3650 900 50  0000 C CNN
+F 3 "" H 3650 900 50  0000 C CNN
+	1    3650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR020
+U 1 1 578DD72B
+P 3650 900
+F 0 "#PWR020" H 3650 750 50  0001 C CNN
+F 1 "+12V" H 3650 1040 50  0000 C CNN
+F 2 "" H 3650 900 50  0000 C CNN
+F 3 "" H 3650 900 50  0000 C CNN
+	1    3650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J1
+U 1 1 578DD742
+P 3150 3550
+F 0 "J1" H 3150 3700 60  0000 C CNN
+F 1 "AC" H 3150 3400 60  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 3150 3550 60  0000 C CNN
+F 3 "" H 3150 3550 60  0000 C CNN
+	1    3150 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR021
+U 1 1 578DD747
+P 3650 900
+F 0 "#PWR021" H 3650 750 50  0001 C CNN
+F 1 "+12V" H 3650 1040 50  0000 C CNN
+F 2 "" H 3650 900 50  0000 C CNN
+F 3 "" H 3650 900 50  0000 C CNN
+	1    3650 900 
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 5700 3    60   Input ~ 0
+Ctrl
+Text HLabel 5650 1050 2    60   UnSpc ~ 0
+Vcc
+Text HLabel 5650 1200 2    60   UnSpc ~ 0
+GND
+$Comp
+L GND #PWR022
+U 1 1 578F04DE
+P 5450 1450
+F 0 "#PWR022" H 5450 1200 50  0001 C CNN
+F 1 "GND" H 5450 1300 50  0000 C CNN
+F 2 "" H 5450 1450 50  0000 C CNN
+F 3 "" H 5450 1450 50  0000 C CNN
+	1    5450 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1200 5450 1200
+Wire Wire Line
+	5450 1200 5450 1450
+$Comp
+L HEADER_2 J3
+U 1 1 578F2BA6
+P 5150 3550
+F 0 "J3" H 5150 3700 60  0000 C CNN
+F 1 "LOAD" H 5150 3400 60  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 5150 3550 60  0000 C CNN
+F 3 "" H 5150 3550 60  0000 C CNN
+	1    5150 3550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3250 3500 5050 3500
+Wire Wire Line
+	3250 3600 4000 3600
+Wire Wire Line
+	4000 3600 4000 4200
+$Comp
+L LM78L05ACZ U3
+U 1 1 578FEA36
+P 4350 1100
+F 0 "U3" H 4150 1300 50  0000 C CNN
+F 1 "LM78L05ACZ" H 4350 1300 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT89-3_Housing" H 4350 1200 50  0000 C CIN
+F 3 "" H 4350 1100 50  0000 C CNN
+	1    4350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_3 J6
+U 1 1 579020CD
+P 7100 1150
+F 0 "J6" H 7100 1350 60  0000 C CNN
+F 1 "HEADER_3" H 7100 950 60  0000 C CNN
+F 2 "Connect:Wafer_Vertical10x5.8x7RM2.5-3" H 7100 1150 60  0000 C CNN
+F 3 "" H 7100 1150 60  0000 C CNN
+	1    7100 1150
+	1    0    0    -1  
+$EndComp
+Text HLabel 6800 1050 0    60   UnSpc ~ 0
+Vcc
+Text HLabel 6800 1250 0    60   Input ~ 0
+Ctrl
+Wire Wire Line
+	6800 1050 7000 1050
+Wire Wire Line
+	6800 1250 7000 1250
+Wire Wire Line
+	7000 1150 6500 1150
+Wire Wire Line
+	6500 1150 6500 1500
+$Comp
+L GND #PWR023
+U 1 1 579026EF
+P 6500 1500
+F 0 "#PWR023" H 6500 1250 50  0001 C CNN
+F 1 "GND" H 6500 1350 50  0000 C CNN
+F 2 "" H 6500 1500 50  0000 C CNN
+F 3 "" H 6500 1500 50  0000 C CNN
+	1    6500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5794D5ED
+P 3650 1350
+F 0 "C1" H 3675 1450 50  0000 L CNN
+F 1 "100p" H 3675 1250 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x4.5" H 3688 1200 50  0000 C CNN
+F 3 "" H 3650 1350 50  0000 C CNN
+	1    3650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5794D638
+P 4900 1350
+F 0 "C2" H 4925 1450 50  0000 L CNN
+F 1 "100p" H 4925 1250 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x4.5" H 4938 1200 50  0000 C CNN
+F 3 "" H 4900 1350 50  0000 C CNN
+	1    4900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1200 4900 1050
+Connection ~ 4900 1050
+$Comp
+L GND #PWR024
+U 1 1 5794D733
+P 4900 1500
+F 0 "#PWR024" H 4900 1250 50  0001 C CNN
+F 1 "GND" H 4900 1350 50  0000 C CNN
+F 2 "" H 4900 1500 50  0000 C CNN
+F 3 "" H 4900 1500 50  0000 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 5794D765
+P 3650 1500
+F 0 "#PWR025" H 3650 1250 50  0001 C CNN
+F 1 "GND" H 3650 1350 50  0000 C CNN
+F 2 "" H 3650 1500 50  0000 C CNN
+F 3 "" H 3650 1500 50  0000 C CNN
+	1    3650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sx02S12 U2
+U 1 1 5794F842
+P 4600 4500
+F 0 "U2" H 4400 4700 50  0000 L CNN
+F 1 "Sx02S12" H 4600 4700 50  0000 L CNN
+F 2 "Sharp SSRs:Sharp_SSR" H 4400 4300 50  0000 L CIN
+F 3 "" H 4600 4500 50  0000 L CNN
+	1    4600 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 4200 4500 4200
+$EndSCHEMATC
